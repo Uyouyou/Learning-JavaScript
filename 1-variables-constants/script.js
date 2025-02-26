@@ -1,15 +1,20 @@
-//declration of variables
-//var, let, const
-
+//declaraing variables: using let keyword
 let firstName = 'John';
 let lastName = 'Doe';
 let age = 20;
 
-console.log(firstName,  lastName, age);
+console.log(firstName, lastName, age);
 
-//Naming conventions
-//- only letters, numbers, underscores and dollar sign
-//- cannot start with a number.
+//Naming conventions in JavaScript:
+/*
+- only letters, numbers, underscores and dollar sign
+- cannot start with a number.
+camelCase: firstName, lastName
+snake_case: first_name, last_name
+PascalCase: FirstName, LastName
+Upper Case with Underscore (Used for constants): MAX_LENGTH
+*/
+
 
 //re-assigning variables
 let simpleName = 'Candy';
@@ -22,7 +27,7 @@ let score;
 
 score = 4;
 
-console.log(score); 
+console.log(score);
 
 
 
@@ -49,7 +54,7 @@ Display the result in the console.
 Bonus: Try subtraction, multiplication, and division as well.
 */
 
-let a  = 9;
+let a = 9;
 let b = 5;
 let sum = a + b;
 console.log(sum);
@@ -88,7 +93,7 @@ Convert it to Fahrenheit using this formula: fahrenheit = (celsius * 9/5) + 32
 Display the Fahrenheit value in the console.
 */
 let celsius = 30;
-let fahrenheit = (celsius * 9/5) + 32;
+let fahrenheit = (celsius * 9 / 5) + 32;
 console.log(fahrenheit);
 
 
