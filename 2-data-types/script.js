@@ -1,30 +1,40 @@
-//string
-const firstname = 'Lily';
+//String
+const firstName = 'Lily';
 
-//number
+//Number
 const age = 45;
+
+const float = 34.56;
 
 const temp = 34.38;
 
-//boolean
+//Boolean
 const isMarried = false;
 
-// null
+
+// Null
 const apt = null;
 
-//undefined
+
+//Undefined
 let surname;
 
-//symbol
-const id  = Symbol('id');
 
-//bigint
+
+//Symbol
+const id = Symbol('id');
+
+
+
+//BigInt
 const n = 2384783948993275872398798n;
+
+
 
 //reference types
 //object
 
-const num = [1,2,3,4,5];
+const num = [1, 2, 3, 4, 5];
 
 //object literal
 const person = {
@@ -63,7 +73,7 @@ let object = {
     food: 'banga',
 };
 
-let array = [1,2,3,4,5,6,7,8,9];
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 console.log(string, number, boolean, nul, nothing, object, array);
 
@@ -77,7 +87,7 @@ Hint: Use typeof
 */
 
 function checkType(value) {
-   console.log(`This is a ${typeof value}`);
+    console.log(`This is a ${typeof value}`);
 }
 
 checkType(4);
@@ -113,7 +123,7 @@ calc(23, 4);
 Task: Write a function that checks if a number is even or odd using a Boolean condition.
 */
 
-function checkNum (num) {
+function checkNum(num) {
     if (num % 2 === 0) {
         return true;
     } else {
