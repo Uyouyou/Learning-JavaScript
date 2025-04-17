@@ -1,8 +1,8 @@
 //converting string to number
 let amount = '100';
 
-//amount = parseInt(amount);
-//amount = +amount;
+amount = parseInt(amount);
+amount = +amount;
 amount = Number(amount);
 
 console.log(amount, typeof amount);
@@ -10,7 +10,7 @@ console.log(amount, typeof amount);
 //converting number to string
 let amount2 = 100;
 
-//amount2 = amount2.toString();
+amount2 = amount2.toString();
 amount2 = String(amount2);
 
 console.log(amount2, typeof amount2);
@@ -41,7 +41,7 @@ Convert 42 (number) to a boolean.
 let num = '123';
 num = parseInt(num);
 
-console.log(num,typeof num);
+console.log(num, typeof num);
 
 let bool = false;
 bool = String(bool);
@@ -75,13 +75,13 @@ Create a function that accepts a value and returns:
 */
 
 function getType(value) {
-   if (Number(value)) {
-    return "Number";
-   } else if (Boolean(value)) {
-    return "Boolean";
-   } else {
-    return "String";
-   }
+    if (Number(value)) {
+        return "Number";
+    } else if (Boolean(value)) {
+        return "Boolean";
+    } else {
+        return "String";
+    }
 }
 
 
@@ -92,7 +92,7 @@ Sum of Mixed Types:
 Add these values and convert the result to a string: 5, "10", true.
 */
 
-let sum = 5 + "10"  + true;
+let sum = 5 + "10" + true;
 sum = String(sum);
 console.log(sum, typeof sum);
 
@@ -100,22 +100,22 @@ console.log(sum, typeof sum);
 Type-Safe Calculator:
 Build a function that accepts two inputs and an operator (+, -, *, /). Ensure the inputs are always converted to numbers before performing the operation.
 */
-function calc (a, b, operator){
+function calc(a, b, operator) {
 
     a = Number(a);
     b = Number(b);
-    
-    switch(operator){
+
+    switch (operator) {
         case '+':
-        return a + b;
+            return a + b;
         case '-':
             return a - b;
-            case '*':
-                return a * b;
-                case '/':
-                    return a / b;
-                    default:
-                        return 'invalide';
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        default:
+            return 'invalide';
     }
 }
 
